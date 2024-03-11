@@ -1,0 +1,22 @@
+@import '../CSS/variables.css';
+
+.main-content-info-alert-container {
+    background-color: var(--alert-info-background);
+    border-radius: 5px;
+    padding: 0 1em;
+
+    box-shadow: var(--box-shadow-color);
+
+    display: none;
+
+    hr {
+        // Why 3 choices? Because some browsers doesnt support some of them
+        color: var(--hr-tag-color);
+        background-color: var(--hr-tag-color);
+        border: 1px solid var(--hr-tag-color);
+    }
+
+    .main-content-info-alert-title {
+        margin-bottom: 0.2em;
+    }
+}

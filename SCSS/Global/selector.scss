@@ -1,0 +1,87 @@
+.selector-container {
+    position: relative;
+
+    .selector {
+        display: none;
+        opacity: 0;
+
+        max-height: 200px;
+
+        position: absolute;
+        background-color: var(--selector-background);
+        box-shadow: 0px 4px 8px 0px rgba(0, 0, 0, 0.2);
+
+        border-radius: 5px;
+
+        z-index: 1;
+        overflow-y: auto;
+
+        // Custom scrollbar (Chrome - Safari)
+        &::-webkit-scrollbar {
+            width: 6px; /* Width of the scrollbar */
+          } // webkit-scrollbar
+        
+          &::-webkit-scrollbar-thumb {
+            background-color: var(--selector-scrollbar-thumb-color); /* Color of the scrollbar thumb */
+            border-radius: 6px; /* Border radius of the thumb */
+          } // webkit-scrollbar-thumb
+        
+          &::-webkit-scrollbar-track {
+            background-color: var(--selector-scrollbar-track-color); /* Color of the scrollbar track */
+            border-radius: 6px; /* Border radius of the track */
+          } // webkit-scrollbar-track
+
+        ul {
+            list-style-type: none;
+            padding: 0;
+            display: flex;
+            flex-direction: column;
+
+            margin: 0;
+
+            li {
+                color: var(--font-primary-color);
+                padding: 1em 1.5em;
+                transition: background-color 0.1s ease-in-out;
+                
+                // Why i made flex? Because, i need to center the text vertically WITH the images
+                display: flex;
+                align-items: center;
+                flex-direction: row;
+                gap: 0.5em;
+
+                white-space: nowrap; // Prevent text from wrapping to the next line
+                overflow: hidden;    // Hide any overflow if text is too long
+                text-overflow: clip; 
+
+                &:hover {
+                    cursor: pointer;
+                    background-color: var(--selector-items-background-color-hover);
+                }
+
+                svg {
+                    path {
+                        stroke: var(--selector-icon-color);
+                    } // path
+                } // svg
+            } // li
+        } // ul
+    } // .selector
+
+    .selector-button {
+        display: flex;
+        align-items: center;
+        flex-direction: row;
+        gap: 0.5em;
+
+        &:hover {
+            cursor: pointer;
+        } // &:hover
+
+        svg {
+            path {
+                stroke: var(--selector-arrow-color);
+            } // path
+        } // svg
+    } // .selector-button
+} // .selector-container

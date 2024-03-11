@@ -1,0 +1,51 @@
+@import '../CSS/variables.css';
+
+.main-content-schedule-container {
+    .main-content-schedule-table-container {
+        display: none;
+        flex-direction: column;
+        align-items: center;
+
+        margin-top: 2em;
+        table, th, td {
+            border: 2px solid var(--table-border-color);
+            border-collapse: collapse;
+            padding: 0.5em;
+            text-align: center;
+        }
+
+        th:first-child,
+        td:first-child {
+            /* Adjust the width of the first column as needed */
+            width: 20%; 
+        }
+
+        th:nth-child(2),
+        td:nth-child(2) {
+            /* Adjust the width of the second column as needed */
+            width: 40%; 
+        }
+        
+        th:nth-child(3),
+        td:nth-child(3) {
+            /* Adjust the width of the third column as needed */
+            width: 40%; 
+        }
+
+        tr {
+            transition: 0.2s;
+        }
+
+        table {
+            width: 100%;
+        }
+
+        tr:nth-child(even) {
+            background-color: var(--table-even-row-color);
+        }
+
+        tr:hover {
+            background-color: var(--table-table-hover);
+        }
+    }
+}

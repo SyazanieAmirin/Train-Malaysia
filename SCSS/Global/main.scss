@@ -1,0 +1,58 @@
+@import '../CSS/variables.css';
+
+body {
+    // Margins
+    margin: 0;
+
+    // Fonts
+    font-family: 'Inter', sans-serif;
+    color: var(--font-primary-color);
+
+    background-color: var(--body-background);
+
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+
+    overflow-x: hidden;
+    
+    main {
+        flex: 1 0 auto;
+    }
+}
+
+// Dark Theme
+body.dark-theme {
+    /* Important Colours */
+    --font-primary-color: #FFFFFF;
+    --accent-color: #7e68ae;
+    --footer-font-color: #8a809f;
+
+    /* Backgrounds */
+    --header-background: #242734;
+    --body-background: #141218;
+    --header-mobile-background: #242734;
+    --footer-background: #242734;
+    --alert-info-background: #242734;
+    
+    /* Shadows */
+    --box-shadow-color: 0px 2px 5.4px 0px rgba(0, 0, 0, 0.25);
+    --box-shadow-color-mobile-menu: 10px 0px 5.4px 0px rgba(0, 0, 0, 0.25);
+
+    /* UI */
+    --selector-background: #211F26;
+    --selector-items-background-color-hover: rgb(55, 53, 61);
+    --selector-scrollbar-thumb-color: #78708c;
+    --selector-scrollbar-track-color: #4f4a5d;
+    --selector-arrow-color: #766f8a;
+    --selector-icon-color: #766f8a;
+    --hr-tag-color: #3d4561;
+    --table-border-color: #2a386c;
+    --table-even-row-color: #27232f;
+    --table-table-hover: #38446e;
+
+    /* Buttons */
+    --button-background-color: #4f4a5d;
+    --button-background-hover-color: #5d5080;
+
+}

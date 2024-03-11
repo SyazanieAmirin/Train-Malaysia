@@ -1,0 +1,50 @@
+@import '../CSS/variables.css';
+
+footer {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+
+    flex-shrink: 0;
+    justify-content: center;
+
+    background-color: var(--footer-background);
+
+    padding-bottom: 0.3em;
+    padding-top: 0.6em;
+
+    margin-top: 2em;
+
+    width: 100vw;
+
+    gap: 0.3em;
+    
+    svg {
+        opacity: 0.8;
+        transition: transform 0.2s ease-in-out, opacity 0.2s ease-in-out;
+        transform: scale(0.8);
+        path {
+            fill: var(--footer-font-color);
+        }
+
+        &:hover {
+            opacity: 1;
+            cursor: pointer;
+            transform: scale(0.9);
+           
+        }
+    }
+    p {
+        font-size: 0.6em;
+        color: var(--footer-font-color);
+    }
+}
+
+// For ipad and above screen size
+@media (min-width: 800px) {
+    footer {
+        p {
+            font-size: 0.9em;
+        }
+    }
+}
