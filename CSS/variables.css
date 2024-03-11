@@ -1,0 +1,39 @@
+/* Variables place. Cant use scss as its not good for
+dark mode usage */
+:root {
+    /* Important Colours */
+    --font-primary-color: #121212;
+    --accent-color: #304695;
+    --footer-font-color: #4f4f4f;
+
+    /* Backgrounds */
+    --header-background: white;
+    --body-background: white;
+    --header-mobile-background: white;
+    --footer-background: white;
+    --alert-info-background: white;
+
+    /* Shadows */
+    --box-shadow-color: 0px 2px 5.4px 0px rgba(0, 0, 0, 0.25);
+    --box-shadow-color-mobile-menu: 3px 0px 5.4px 0px rgba(0, 0, 0, 0.25);
+
+    /* UI */
+    --selector-background: white;
+    --selector-items-background-color-hover: #e7e7e7;
+    --selector-scrollbar-thumb-color: #d3d3d3;
+    --selector-scrollbar-track-color: #ffffff;
+    --selector-arrow-color: #9b9b9b;
+    --selector-icon-color: #3c3c3c;
+    --hr-tag-color: #a6b4e1;
+    --table-border-color: #c1c8e0;
+    --table-odd-row-color: #e9edf9;
+    --table-table-hover: #cfd3e1;
+
+    /* Buttons */
+    --button-background-color: #e6edf1;
+    --button-background-hover-color: #bec9e5;
+
+    /* Others */
+    --primary-max-width: 800px; /* Can't change at certain places. Such as in header because media query cant detect the variable. */
+
+}
