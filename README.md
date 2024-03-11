@@ -1,6 +1,6 @@
 # Welcome to Train Malaysia!
 ![Thumbnail for Train Malaysia](Thumbnail/Thumbnail.png)
-Link to site: trainmalaysia.com(trainmalaysia.com)
+Link to site: [trainmalaysia.com](trainmalaysia.com)
 
 ## What is Train Malaysia?
 Train Malaysia is a website that shows you all about trains in Malaysia! For now, the trains only shows information in Klang Valley area but I will improve more on it! 
