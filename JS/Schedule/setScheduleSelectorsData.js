@@ -229,9 +229,15 @@ function getFromToTimeForSchedule(folder, line, weekType, fromStation, toStation
                 document.getElementsByClassName("main-content-schedule-container")[0].style.marginBottom = '2em';
 
             } else {
-                console.log("Selected stations not found in the JSON data.");
+                scheduleJSONNotFound();
             }
         });
+}
+
+function scheduleJSONNotFound() {
+    document.getElementById("main-content-schedule-error").innerHTML = 'Error: JSON file not found. Please report to the developer';
+    document.getElementById("main-content-schedule-error").style.display = 'block';
+
 }
 
 function updateScheduleTable(fromData, toData) {
