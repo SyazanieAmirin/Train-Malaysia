@@ -2,6 +2,9 @@
 ![Thumbnail for Train Malaysia](Thumbnail/Thumbnail.png)
 Link to site: [trainmalaysia.com](trainmalaysia.com)
 
+## NOTICE
+I would stop updating this site for now as the code is very convoluted for now hahahaha ie hard to update without breaking other stuff/copy & paste multiple same code... I'm creating a new one using React. Again, I am a beginner in web-dev hence don't expect the new site to be out for some time hahahaha. Although there's no new features, the KTM schedule would be updated from time to time.
+
 ## What is Train Malaysia?
 Train Malaysia is a website that shows you all about trains in Malaysia! For now, the trains only shows information in Klang Valley area but I will improve more on it! 
 
